@@ -1,5 +1,6 @@
 # skill-up-book01
 Web Service with AWS and spring boot
+책 내용은 Notion에 따로 요약 정리를 해놓았다 - https://www.notion.so/2022-Study-KDH-JYH-LDY-c923dca3ceea4b4da0c4b2c618199bd7
 
 1주차 Feb.27~Mar.05
   [ 인텔리제이 툴을 처음 사용해보며 느낀점 ] 
