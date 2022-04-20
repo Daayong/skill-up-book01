@@ -1,4 +1,4 @@
-package com.practice.test01.web;
+package com.jojoldu.book.springboot.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,8 +21,8 @@ public class HelloControllerTest {
     public void hello가_리턴된다() throws Exception{
         String hello = "hello";
         mvc.perform(get("/hello"))
-            .andExpect(status().isOk())
-            .andExpect(content().string(hello));
+                .andExpect(status().isOk())
+                .andExpect(content().string(hello));
     }
 
     @Test
@@ -30,9 +30,9 @@ public class HelloControllerTest {
         String name="hello";
         int amount=1000;
         mvc.perform(
-                    get("/hello/dto")
-                        .param("name",name)
-                        .param("amount",String.valueOf(amount))
+                        get("/hello/dto")
+                                .param("name",name)
+                                .param("amount",String.valueOf(amount))
                 )
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name",is(name)))
